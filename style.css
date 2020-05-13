@@ -21,7 +21,6 @@ header, form {
     display: flex;
     justify-content: center;
     align-content: center;
-
 }
 
 form input, form button {
@@ -105,3 +104,43 @@ form button:hover {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
+
+select {
+    -webkit-apprearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #c75850 ;
+    width: 5rem;
+    cursor: pointer; 
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+
+.select:after {
+    content: "\25BC";
+    position: absolute;
+    background: #c75850;
+    top: 0;
+    right: 0;
+    padding: 0.3rem;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    background: rgb(148, 59, 56);
+    transition: all 0.3s ease;
+    
+}
+
