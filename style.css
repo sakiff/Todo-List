@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    background-image: linear-gradient(90deg,#c75850,#f3b983);
 }
 
 body{ 
-    background-image: linear-gradient(90deg,#c75850,#f3b983);
+    
     color: white;
     font-family: "Caveat", cursive;
 }
